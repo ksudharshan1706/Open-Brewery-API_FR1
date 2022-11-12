@@ -6,8 +6,6 @@ const createElements = (info,type) =>{
   element.innerText = info
   return element
 }
-
-
 let newElement = document.createElement('div')
 document.body.appendChild(newElement)
 
@@ -15,9 +13,6 @@ const inputTag = document.getElementById("text-inp")
 
 const displayDiv = document.getElementById("displaydiv")
 displayDiv.className = "m-3"
-displayDiv.style.height = "100px"
-displayDiv.style.width = "200px"
-displayDiv.style.backgroundColor = "white"
 displayDiv.style.display = "None"
 displayDiv.style.border = "2px solid"
 const table = document.createElement('table')
@@ -44,7 +39,6 @@ submitbtn.addEventListener('click',(e)=>{
   console.log("here",dataDict)
   console.log(inputTag.value,dataDict[inputTag.value])
   displayDiv.style.display = "block"
-  // displayDiv.style.transition ="all 1000ms ease";
   displayDiv.classList.add("simple-transition")
   displayDiv.innerText = dataDict[inputTag.value]
 })
