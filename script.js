@@ -39,6 +39,6 @@ submitbtn.addEventListener('click',(e)=>{
   console.log("here",dataDict)
   console.log(inputTag.value,dataDict[inputTag.value])
   displayDiv.style.display = "block"
-  displayDiv.classList.add("simple-transition")
+  displayDiv.classList.add("transition")
   displayDiv.innerText = dataDict[inputTag.value]
 })
